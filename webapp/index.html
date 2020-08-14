@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>List-Fiori</title>
+		<script id="sap-ui-bootstrap"
+			src="resources/sap-ui-core.js"
+			data-sap-ui-theme="sap_fiori_3"
+			data-sap-ui-resourceroots='{"N-space.List-Fiori": "./"}'
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"
+			data-sap-ui-async="true"
+			data-sap-ui-frameOptions="trusted">
+		</script>
+		<script>
+		var oView1 = new sap.ui.view({
+			id:"idView1"
+		});
+			var oView2 = new sap.ui.view({
+			id:"idView2"
+		});
+			var oApp = new sap.m.App("idApp",{
+				pages:[oView1]
+			});
+			oApp.placeAt("content");
+		</script>
+	</head>
+	<body class="sapUiBody" >
+		<div id = "content "></div>
+		<div data-sap-ui-component data-name="N-space.List-Fiori" data-id="container" data-settings='{"id" : "List-Fiori"}'></div>
+	</body>
+</html>
